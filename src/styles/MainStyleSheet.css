@@ -1,0 +1,796 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Titillium+Web&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Titillium+Web&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+/*
+=====================================================================
+   Index:
+   a. General Styles
+   b. Header Styles
+   c. About Section
+   d. tips Section
+   g. Testimonials Section
+   h. Contact Section
+   i. Footer
+
+===================================================================== */
+
+/* ------------------------------------------------------------------ */
+/* a. General Styles
+/* ------------------------------------------------------------------ */
+
+body {
+  font-family: "Ubuntu", "Courier New", Courier, monospace;
+  max-width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+  max-width: 100vw;
+}
+
+.app_container {
+  max-width: 100vw;
+}
+
+.row {
+  min-width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------------------------------------------------------------------ */
+/* b. Header Styles
+/* ------------------------------------------------------------------ */
+
+header {
+    position: relative;
+    height: 100vh;
+    min-height: 500px;
+    width: 100%;
+    background: linear-gradient( 90deg, rgba(184, 222, 235, 1) 30%, rgba(235, 191, 206, 0) 70%, rgba(184, 222, 235, 0) 70% ), url(../../public/images/home.jpg) 25%;
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* vertically center banner section */
+header:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+header .banner {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 auto;
+  min-width: 100%;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+header .banner-text {
+  width: 50%;
+  margin: 0;
+  font-family: "Ubuntu", Courier, monospace;
+}
+
+header .banner-text h1 {
+  font: 3em "Montserrat", sans-serif;
+  color: #fff;
+  letter-spacing: -2px;
+  margin: 0 auto 18px auto;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
+}
+header .banner-text h3 {
+  font: 1.5em;
+  color: #a8a8a8;
+  margin: 0 auto;
+  width: 70%;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+header .banner-text hr {
+  width: 60%;
+  margin: 18px auto 24px auto;
+  border-color: #2f2d2e;
+  border-color: rgba(150, 150, 150, 0.1);
+}
+
+
+/* scrolldown link */
+header .scrolldown a {
+  position: absolute;
+  bottom: 30px;
+  left: 25%;
+  margin-left: -29px;
+  color: #313131;
+  display: block;
+  height: 42px;
+  width: 42px;
+  font-size: 42px;
+  line-height: 42px;
+  border-radius: 100%;
+  opacity: 35%;
+
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+header .scrolldown a:hover {
+  color: #fff;
+}
+
+
+/* ------------------------------------------------------------------ */
+/* c. About Section
+/* ------------------------------------------------------------------ */
+
+#about {
+  background: #e8e8e8;
+  padding-top: 96px;
+  padding-bottom: 66px;
+  overflow: hidden;
+  width: 100%;
+}
+
+#about a,
+#about a:visited {
+  color: rgb(0, 0, 0);
+}
+#about a:hover,
+#about a:focus {
+  color: #69f423;
+}
+
+#about h2 {
+  font: 1.5em "Ubuntu", "open-sans", sans-serif;
+  color: #1f1f1f;
+  margin-bottom: 12px;
+}
+#about p {
+  line-height: 30px;
+  color: #636363;
+}
+#about .about-pic {
+  position: relative;
+  width: 100%;
+}
+
+.about_text_container {
+  width: 50%;
+  margin: 2%;
+}
+
+.about_img_cont {
+  max-width: 40%;
+}
+
+#about .download {
+  width: 58.33333%;
+  padding-top: 6px;
+}
+#about .main-col {
+  padding-right: 5%;
+}
+#about .download .button {
+  margin-top: 6px;
+  background: #444;
+}
+#about .download .button:hover {
+  background: #fff;
+  color: #2b2b2b;
+}
+#about .download .button i {
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+/* ------------------------------------------------------------------ */
+/* d. tips Section
+/* ------------------------------------------------------------------ */
+
+#tips {
+  background: #1f1f1f url(../../public/images/mv5.jpg) no-repeat
+    center center;
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
+  background-attachment: fixed;
+  padding-top: 90px;
+  padding-bottom: 72px;
+  overflow: hidden;
+}
+
+#tips a,
+#tips a:visited {
+  color: #11abb0;
+}
+#tips a:hover,
+#tips a:focus {
+  color: #313131;
+}
+
+#tips h1 {
+  font: 2em "Ubuntu", sans-serif;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #1f1f1f;
+  background-color: #e8e8e8a0;
+  padding: 1rem;
+}
+#tips h1 span {
+  border-bottom: 3px solid #11abb0;
+  padding-bottom: 6px;
+}
+#tips h3 {
+  font: 1.5em sans-serif;
+}
+
+.tipCard_container {
+  width: 25em;
+  margin: 2%;
+}
+
+.tipCard {
+  width: 100%;
+  height: fit-content;
+  background-color: #fff;
+  box-shadow: 3px 3px 15px #1f1f1f;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 2%;
+}
+
+.tipCard_text p {
+  min-height: 100px;
+  color: #636363;
+}
+
+.tipCard_text h5 {
+  color: #636363;
+  font-family: sans-serif;
+}
+
+.tipCard_img {
+  width: 100%;
+  height: 15em;
+  background-size: cover;
+  border-radius: 2% 2% 0 0;
+}
+
+.tipCard_text {
+  padding: 3%;
+  font-size: 1em;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tips {
+  margin-bottom: 48px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e8e8e8;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#tips h3 {
+  font: 1.2em "Ubuntu", sans-serif;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #1f1f1f;
+  background-color: #e8e8e8a0;
+  padding: 1rem;
+}
+
+.button-tip {
+    background: #6A9582;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0;
+    color: #fff;
+    font-size: 1em;
+}
+
+
+
+/* ------------------------------------------------------------------
+/* g. Testimonials
+/* ------------------------------------------------------------------ */
+
+#testimonials {
+    background-color: #6B9482;
+    position: relative;
+    min-height: 250px;
+    width: 100%;
+    overflow: hidden;
+}
+#testimonials .text-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#testimonials h1 {
+  font: 2em "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+}
+#testimonials h1 span {
+  display: none;
+}
+#testimonials .header-col {
+  padding-top: 9px;
+}
+#testimonials .header-col h1:before {
+  font-family: "Ubuntu", "Courier New", Courier, monospace;
+  content: "\f10d";
+  padding-right: 10px;
+  font-size: 2em;
+  line-height: 72px;
+  text-align: left;
+  float: left;
+  color: #fff;
+}
+
+
+/* Flex Slider
+/* ------------------------------------------------------------------ */
+
+.slider_container {
+  margin: 0;
+  margin-left: 20%;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+.slider_img {
+  min-height: 200px;
+  max-height: 200px;
+  min-width: 200px;
+  max-width: 200px;
+  margin: 20px;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+
+/* ------------------------------------------------------------------ */
+/* h. Contact Section
+/* ------------------------------------------------------------------ */
+
+#contact {
+    background-image: linear-gradient(to right top, #8d6c7d, #a590a0, #c0b4c1, #ddd9e1, #ffffff);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #636363;
+}
+
+#contact a,
+#contact a:visited {
+  color: #69f423;
+}
+#contact a:hover,
+#contact a:focus {
+  color: #000;
+}
+
+#contact .lead {
+  font: 1.5em "opensans-light", sans-serif;
+  text-align: center;
+}
+
+/* contact form */
+#contact form {
+  width: 50%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+    #contact input,
+    #contact textarea,
+    #contact select {
+        padding: 15px;
+        color: #8D6C7D;
+        background: #C0FCF7;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        border: 0;
+        outline: none;
+        font-size: 15px;
+        line-height: 24px;
+        width: 80%;
+    }
+
+#contact .textarea {
+  height: 150px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+    #contact input:focus,
+    #contact textarea:focus,
+    #contact select:focus {
+        color: #000;
+        background-color: #FFE4F5;
+    }
+#contact .submit {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+  background: #1f1f1f;
+  border: none;
+  cursor: pointer;
+  height: auto;
+  border-radius: 3px;
+  padding: 15px;
+  width: 80%;
+  margin-top: 15px;
+}
+#contact .submit:hover {
+  background: #e8e8e8;
+  color: #1f1f1f;
+}
+#contact span.required {
+  color: #cc5200;
+  font-size: 10px;
+  margin: 0px;
+}
+#contact span.success {
+  color: #fff;
+  font-size: 15px;
+  margin: 0px;
+  text-align: center;
+}
+
+#message-warning,
+#message-success {
+  padding: 24px 24px;
+  margin-bottom: 36px;
+  width: 65%;
+  margin-left: 26%;
+}
+#message-warning {
+  color: #d72828;
+}
+#message-success {
+  color: #11abb0;
+}
+
+#message-warning i,
+#message-success i {
+  margin-right: 10px;
+}
+#image-loader {
+  display: none;
+  position: relative;
+  left: 18px;
+  top: 17px;
+}
+
+/* Twitter Feed */
+#twitter {
+  margin-top: 12px;
+  padding: 0;
+}
+#twitter li {
+  margin: 6px 0px 12px 0;
+  line-height: 30px;
+}
+#twitter li span {
+  display: block;
+}
+#twitter li b a {
+  font: 13px/36px "opensans-regular", Sans-serif;
+  color: #474747 !important;
+  border: none;
+}
+
+/* ------------------------------------------------------------------ */
+/* i. Footer
+/* ------------------------------------------------------------------ */
+
+footer {
+  padding-top: 20px;
+  margin-bottom: 48px;
+  margin-top: 50px;
+  color: #303030;
+  font-size: 14px;
+  text-align: center;
+  position: relative;
+}
+
+    footer a,
+    footer a:visited {
+        color: #B8DEEB;
+        font-size: 2em;
+        margin: 5px
+    }
+
+footer a:hover {
+    color: #fff;
+    text-shadow: 0px 0px 50px #fff;
+}
+
+/* copyright */
+footer .copyright {
+  margin: 0;
+  padding: 0;
+}
+footer .copyright li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  line-height: 24px;
+}
+.ie footer .copyright li {
+  display: inline;
+}
+footer .copyright li:before {
+    content: "\2023";
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #B8DEEB;
+}
+footer .copyright li:first-child:before {
+  display: none;
+}
+
+/* Go To Top Button */
+#go-top {
+  width: 2em;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+    #go-top a {
+        text-decoration: none;
+        border: 0 none;
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-color: #B8DEEB;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        color: #fff;
+        font-size: 21px;
+        line-height: 60px;
+        border-radius: 100%;
+    }
+
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(to left, #8d6c7d, #a590a0, #c0b4c1, #ddd9e1, #ffffff);
+    position: fixed;
+    z-index: 999;
+    min-width: 100%;
+    max-width: 100vw;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.img-logo {
+  height: 70px;
+  width: 70px;
+  margin: 0;
+  margin-top: 5px;
+  margin-left: 5px;
+  padding: 5px;
+}
+
+.ul-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.25em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.li-nav {
+  margin-left: 25px;
+  margin: 0;
+  height: 20px;
+  text-decoration: none;
+}
+
+.li-nav .active {
+  color: #69f423;
+  font-weight: bold;
+}
+
+.li-nav {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 14px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: all 1s;
+  margin-right: 10px;
+}
+
+.li-nav:after,
+.li-nav:before {
+  content: " ";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border: none;
+  transition: all 1s;
+}
+    .li-nav:after {
+        top: -1px;
+        left: -1px;
+        border-top: 1px solid #EBBFCE;
+        border-left: 1px solid #EBBFCE;
+    }
+    .li-nav:before {
+        bottom: -1px;
+        right: -1px;
+        border-bottom: 1px solid #EBBFCE;
+        border-right: 1px solid #EBBFCE;
+    }
+    .li-nav:hover {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        color: #B8DEEB;
+    }
+.li-nav:hover:before,
+.li-nav:hover:after {
+  width: 100%;
+  height: 100%;
+}
+
+.hamburger {
+  display: none;
+  margin-right: 15px;
+}
+
+@media all and (max-width: 1000px) {
+  .hamburger {
+    color: #fff;
+    display: flex;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 10px;
+    height: 50px;
+  }
+    .mobileMenuOn {
+        background-color: #6B9482;
+        z-index: 100;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: 30vh;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        transition: 0.5s all ease;
+    }
+
+  .mobileMenuOff {
+    background-color: grey;
+    z-index: 100;
+    position: absolute;
+    top: 69px;
+    left: -100%;
+    width: 100%;
+    height: 90vh;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s all ease;
+  }
+  .li-nav {
+    margin-bottom: 10px;
+  }
+}
+
+@media all and (max-width: 800px) {
+
+    header {
+        background: linear-gradient( 90deg, rgba(184, 222, 235, 1) 30%, rgba(235, 191, 206, 0) 70%, rgba(184, 222, 235, 0) 70% ), url(../../public/images/home.jpg) 25%;
+    }
+  header .banner-text {
+    width: 100%;
+  }
+
+
+#about .about-pic {
+  position: relative;
+  width: 100%;
+}
+
+.about_text_container {
+  width: 100%;
+  padding: 5%;
+  margin: 0;
+  text-align: center;
+}
+
+.about_img_cont {
+  max-width: 90%;
+}
+
+
+.tipCard_container {
+  width: 80%;
+  margin: 2%;
+}
+
+    .tipCard {
+        width: 100%;
+        height: fit-content;
+        background-color: #EBBFCE;
+        box-shadow: 3px 3px 15px #1f1f1f;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 2%;
+    }
+
+
+#contact form {
+  width: 100%;
+  padding: 5%;
+}
+
+.slider_container {
+  margin: 0;
+  margin-left: 15%;
+  padding: 0;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  text-align: center;
+  height: 70vh;
+}
+
+    .vaga-img {
+        background: linear-gradient( 90deg, rgba(184, 222, 235, 1) 30%, rgba(235, 191, 206, 0) 70%, rgba(184, 222, 235, 0) 70% ), url(../../public/images/home.jpg) 25%;
+        position: relative;
+        height: 100vh;
+        min-height: 500px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover !important;
+        -webkit-background-size: cover !important;
+        text-align: center;
+        overflow: hidden;
+    }
+
+}
