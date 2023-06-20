@@ -31,7 +31,7 @@ const About = () => {
             </div>
             <div className="row">
                 <div className="about_img_cont">
-                    <img className="about-pic" src="images/mv6.jpg" alt="" />
+                    <img className="about-pic" src="images/mv9.jpg" alt="" />
                 </div>
                 <div className="about_text_container">
                     <h2>{siteData.visionT}</h2>
