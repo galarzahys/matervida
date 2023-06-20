@@ -38,7 +38,27 @@ const About = () => {
                     <p>{siteData.vision}</p>
                 </div>
             </div>
-      </section>
+            <div className="row">
+                <div className="about_text_container">
+                    <h2>Valores</h2>
+                    <p>
+                        <ul>
+                            {siteData.valores.map(item => (
+                                <li>{item}
+                                </li>
+                            ))}
+                        </ul>
+
+                    </p>
+                    <br></br>
+                </div>
+                <div className="about_img_cont">
+                    <img className="about-pic" src="images/mv8.jpg" alt="" />
+                </div>
+
+            </div>
+        </section>
+                      
     );
   }
 

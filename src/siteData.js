@@ -26,7 +26,9 @@ const siteData = {
     "visionT": "Vissão",
     "mision": "Proporcionar cuidados especializados do ser humano de forma integral, compreendendo todos os seus aspectos físico, mental, espiritual e emocional de forma interligada, voltado a gestantes, puérperas e recém-nascidos, com foco na saúde e bem-estar, promovendo um início de vida saudável e estimulante, através de uma abordagem compassiva, baseada em evidências científicas.",
     "vision": "Ser uma rede de referência em cuidado único, proporcionando um ambiente acolhedor e especializado, onde cada indivíduo receba cuidados personalizados e atenção dedicada ao início da vida.",
-    "website":"https://www.visitnorway.com/",
+    "valores": ["Ética", "Empatia", "Educação em saúde", "Respeito", "Excelência"],
+
+    "website": "https://www.visitnorway.com/",
     "tips":[
         {
           "id": 1,
